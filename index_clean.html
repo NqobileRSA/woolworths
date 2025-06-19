@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Woolworths Wellness & Self-Care</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">
+            <i class="fas fa-leaf" style="font-size: 2rem; color: #2a7f62"></i>
+            <h1>Woolworths <span>Wellness</span></h1>
+          </div>
+
+          <div class="mobile-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+
+          <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="header-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#" class="cart-icon" id="cartIcon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Nurture Your Body, Nourish Your Soul</h1>
+          <p>
+            Discover our premium collection of organic wellness products
+            designed to enhance your self-care routine and promote holistic
+            health.
+          </p>
+          <div class="hero-buttons">
+            <a href="#products" class="btn">Shop Now</a>
+            <a href="#about" class="btn btn-outline">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>100% Organic</h3>
+            <p>
+              All our products are made with certified organic ingredients, free
+              from harmful chemicals.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h3>Eco-Friendly</h3>
+            <p>
+              We use sustainable packaging and eco-conscious practices to
+              protect our planet.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Cruelty-Free</h3>
+            <p>
+              Our products are never tested on animals and are certified
+              cruelty-free.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Free Shipping</h3>
+            <p>
+              Enjoy free shipping on all orders over R500 across South Africa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+      <div class="container">
+        <h2 class="section-title">Our Best Sellers</h2>
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-badge">New</div>
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1602312771175-0a4f1f0f6214?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Pure Organic Face & Body Cleanser"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-category">Cleansers</div>
+              <h3 class="product-title">Pure Organic Face & Body Cleanser</h3>
+              <p class="product-desc">
+                Gentle plant-based formula for all skin types, infused with aloe
+                vera and chamomile.
+              </p>
+              <div class="product-bottom">
+                <div class="product-price">R199.99</div>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <button
+                class="add-to-cart"
+                data-id="1"
+                data-name="Pure Organic Face & Body Cleanser"
+                data-price="199.99"
+                data-image="https://images.unsplash.com/photo-1602312771175-0a4f1f0f6214?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-badge">Popular</div>
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                alt="Bamboo Hygiene Set"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-category">Hygiene</div>
+              <h3 class="product-title">Bamboo Hygiene Set</h3>
+              <p class="product-desc">
+                Eco-conscious essentials including bamboo toothbrush, comb, and
+                reusable cotton pads.
+              </p>
+              <div class="product-bottom">
+                <div class="product-price">R349.99</div>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <button
+                class="add-to-cart"
+                data-id="2"
+                data-name="Bamboo Hygiene Set"
+                data-price="349.99"
+                data-image="https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-badge">Best Seller</div>
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1671492241804-c0e02f668bc1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Aromatherapy Sleep Balm"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-category">Aromatherapy</div>
+              <h3 class="product-title">Aromatherapy Sleep Balm</h3>
+              <p class="product-desc">
+                Calming blend of lavender and chamomile oils to promote deep,
+                restful sleep.
+              </p>
+              <div class="product-bottom">
+                <div class="product-price">R179.99</div>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+              <button
+                class="add-to-cart"
+                data-id="3"
+                data-name="Aromatherapy Sleep Balm"
+                data-price="179.99"
+                data-image="https://images.unsplash.com/photo-1671492241804-c0e02f668bc1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-badge">New</div>
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1623826538345-192361e2d4cd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Organic Lavender Body Oil"
+              />
+            </div>
+            <div class="product-info">
+              <div class="product-category">Body Care</div>
+              <h3 class="product-title">Organic Lavender Body Oil</h3>
+              <p class="product-desc">
+                Soothing lavender-infused oil for relaxation and moisturizing
+                dry skin.
+              </p>
+              <div class="product-bottom">
+                <div class="product-price">R249.99</div>
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+              <button
+                class="add-to-cart"
+                data-id="4"
+                data-name="Organic Lavender Body Oil"
+                data-price="249.99"
+                data-image="https://images.unsplash.com/photo-1623826538345-192361e2d4cd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px">
+          <a href="#" class="btn">View All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Section -->
+    <section class="social">
+      <div class="container">
+        <div class="social-content">
+          <h2 class="section-title">Join Our Community</h2>
+          <p>
+            Follow us on social media for daily wellness tips, exclusive offers,
+            and behind-the-scenes content.
+          </p>
+        </div>
+
+        <div class="social-grid">
+          <div class="social-card">
+            <img
+              src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Social Media"
+            />
+            <div class="social-overlay">
+              <h3>#WellnessJourney</h3>
+              <p>Share your self-care routine</p>
+            </div>
+          </div>
+
+          <div class="social-card">
+            <img
+              src="https://images.unsplash.com/photo-1525874684015-58379d421a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Social Media"
+            />
+            <div class="social-overlay">
+              <h3>Product Tips</h3>
+              <p>Maximize your wellness routine</p>
+            </div>
+          </div>
+
+          <div class="social-card">
+            <img
+              src="https://images.unsplash.com/photo-1616469829479-1be9c1e4f91d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+              alt="Social Media"
+            />
+            <div class="social-overlay">
+              <h3>Eco-Friendly Living</h3>
+              <p>Sustainable lifestyle tips</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <h2 class="section-title">Wellness Insights</h2>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <div class="blog-img">
+              <img
+                src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                alt="Blog Post"
+              />
+            </div>
+            <div class="blog-info">
+              <div class="blog-date">May 15, 2023</div>
+              <h3 class="blog-title">
+                5 Simple Self-Care Rituals for Busy People
+              </h3>
+              <p class="blog-excerpt">
+                Discover quick and effective self-care practices that fit into
+                even the busiest schedules...
+              </p>
+              <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-img">
+              <img
+                src="https://images.unsplash.com/photo-1598808503746-f34cfb6c2524?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                alt="Blog Post"
+              />
+            </div>
+            <div class="blog-info">
+              <div class="blog-date">June 2, 2023</div>
+              <h3 class="blog-title">The Benefits of Organic Skincare</h3>
+              <p class="blog-excerpt">
+                Learn why switching to organic skincare products can transform
+                your skin health and overall wellness...
+              </p>
+              <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <div class="blog-img">
+              <img
+                src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                alt="Blog Post"
+              />
+            </div>
+            <div class="blog-info">
+              <div class="blog-date">June 18, 2023</div>
+              <h3 class="blog-title">
+                Creating a Sustainable Bathroom Routine
+              </h3>
+              <p class="blog-excerpt">
+                Simple swaps to make your daily routine more eco-friendly
+                without sacrificing effectiveness...
+              </p>
+              <a href="#" class="btn btn-outline">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+          <div class="about-img">
+            <img
+              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Woolworths Wellness Team"
+            />
+          </div>
+          <div class="about-text">
+            <h2>Our Commitment to Wellness</h2>
+            <p>
+              Woolworths Wellness & Self-Care was founded in 2010 with a simple
+              mission: to provide South Africans with high-quality, natural
+              wellness products that enhance their daily self-care routines
+              while respecting our planet.
+            </p>
+            <p>
+              We carefully source organic ingredients from ethical suppliers
+              across South Africa, ensuring that every product meets our
+              rigorous standards for purity and sustainability. Our commitment
+              extends beyond products to our eco-friendly packaging and
+              carbon-neutral shipping practices.
+            </p>
+            <p>
+              At Woolworths Wellness, we believe that true wellness comes from
+              nurturing both body and soul, which is why we're dedicated to
+              creating products that help you feel your best while making a
+              positive impact on the world around you.
+            </p>
+
+            <div class="about-values">
+              <div class="value-card">
+                <h4>Sustainability</h4>
+                <p>Zero-waste packaging and carbon-neutral shipping</p>
+              </div>
+              <div class="value-card">
+                <h4>Purity</h4>
+                <p>100% natural ingredients with no harmful chemicals</p>
+              </div>
+              <div class="value-card">
+                <h4>Community</h4>
+                <p>Supporting local farmers and artisans</p>
+              </div>
+              <div class="value-card">
+                <h4>Innovation</h4>
+                <p>Continuously improving our formulations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <div class="contact-details">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Our Location</h4>
+                  <p>123 Wellness Street, Sandton, Johannesburg 2196</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+27 11 123 4567</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email</h4>
+                  <p>wellness@woolworths.co.za</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Business Hours</h4>
+                  <p>
+                    Monday-Friday: 8am-6pm<br />Saturday: 9am-4pm<br />Sunday:
+                    10am-2pm
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+            <form>
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Join Our Wellness Community</h2>
+          <p>
+            Subscribe to our newsletter and get 15% off your first order, plus
+            exclusive wellness tips and early access to new products.
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>Woolworths Wellness</h3>
+            <p>
+              Your trusted source for premium organic wellness products that
+              nurture your body and respect the planet.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>123 Wellness Street, Sandton, Johannesburg 2196</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <span>+27 11 123 4567</span>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <span>wellness@woolworths.co.za</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>
+            &copy; 2023 Woolworths Wellness & Self-Care. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Your Shopping Cart</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div id="cartItems">
+          <div class="empty-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <p>Your cart is empty</p>
+          </div>
+        </div>
+        <div class="cart-total">
+          <h3>Total: <span id="cartTotal">R0.00</span></h3>
+        </div>
+        <div class="cart-actions">
+          <button class="btn btn-outline" id="continueShopping">
+            Continue Shopping
+          </button>
+          <button class="btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
